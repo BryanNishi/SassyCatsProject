@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/ship.css">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144.png" />
+    <title>Sassy Cat in Space</title>
+</head>
+
+<body>
+    <div id="mediaCont" class="container">
+        <div class="jumbotron">
+            <h1>Onboard your Ship...</h1>
+            <div class="container">
+                <!-- Row 1 - Character, Stats, Options -->
+                <div class="row ship1">
+                    <!-- Character -->
+                    <div class="col-md-4 sprite">
+                        <h4>Character</h4>
+                        <p><span id="charName"></span></p>
+                        <!-- Character image -->
+                        <img class="img-fluid" id="charImage">
+                    </div>
+                    <!-- Stats -->
+                    <div class="col-md-4 stats">
+                        <h4>Stats</h4>
+                        <br>
+                        <li>Age (level): <span class="statsLevel">0</span></li>
+                        <li>Political Influence (score): <span class="statsPower">0</span></li>
+                    </div>
+                    <!-- Options -->
+                    <div class="col-md-4 log">
+                        <h4>Ships log</h4>
+                        <br>
+                        <li>Woke up</li>
+                        <li>Lazed about like the swine you are</li>
+                        <li>Ate a potato and some mackerel</li>
+                        <li>Gazed out the ship</li>
+                    </div>
+                </div>
+
+                <!-- Row 2 - Choices -->
+                <div class="row">
+                    <div class="col lowerBtn">
+                        <button id="conquer">Conquer New Planet</button>
+                    </div>
+                    <div class="col lowerBtn">
+                        <button id="wuss">Give up like a wuss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/gameLogic/playerLogic.js"></script>
+    <script src="js/gameLogic/shipLogic.js"></script>
+    <script src="js/ending.js"></script>
+
+</body>
+
+</html>
